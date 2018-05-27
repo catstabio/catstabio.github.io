@@ -5,29 +5,96 @@
 
 body {
   font-size: 16px;
-  ____________  /* Declare the base font-family */
+    
+    font-family: sans-serif;
 }
 
 header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
   max-width: ______; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
-header {}
-header h1 {}
-header img {}
-header .subheading {}
+header {
+    color: #e7e7e7;
+    background-color: #2f4154;
+}
+header h1 {
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+    color: #9ddbd4;
+}
+header img {
+    position: absolute;
+    left: 20px;
+    top: 40px;
+}
+header .subheading {
+    text-align: center;
+    padding:10px;
+}
 
-nav {}
+nav {
+}
 nav button {}
-nav ul {}
-nav ul li {}
-nav ul li a {}
-nav ul li.active a {}
-nav ul li a:hover {}
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    text-align: center;
+    background-color:#579b91;
+}
+nav ul li {
+    display:inline;
+}
+nav ul li a {
+    display:inline-block;
+    color:#e7e7e7;
+    text-align; center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul li.active a {
+    color: #9ddbd4;
+}
+nav ul li a:hover {
+    color:black;
+}
 
-main {}
-main h2 {}
+main {
+    text-align: center;
+    color: #e7e7e7;
+    background-color: #2f4154;
+    padding: 5px;
+}
+main h2 {
+    font-size: 37px;
+    color: #9ddbd4;
+}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { }
 
-footer {}
+table{
+    border-collapse: collapse;
+    width:100%
+}
+th, td{
+    text-align: left;
+    padding: 8px;
+    color: #579b91;
+    background-color:#e7e7e7;
+}
+.forecast {
+    color: #9ddbd4;
+        }
+h3 {
+    color: #9ddbd4;
+    font-size: 37px;
+}
+
+footer {
+    text-align: center;
+    color: #579b91;
+    background-color: #2f4154;
+    padding: 20px;
+    }
