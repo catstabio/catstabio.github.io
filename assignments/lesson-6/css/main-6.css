@@ -1,0 +1,107 @@
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+    
+    font-family: 'Roboto', sans-serif;
+}
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  max-width: ______; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+
+header {
+    color: #e7e7e7;
+    background-color: #2f4154;
+    padding: .5rem 2%;
+}
+header h1 {
+    margin:0;
+    font-size: 40px;
+    color: #9ddbd4;
+}
+header figure.logo {
+    float: left;
+    margin: 0 2% 0 0;
+}
+header h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+nav {
+}
+nav button {}
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    text-align: center;
+    background-color:#579b91;
+}
+nav ul li {
+    display:inline;
+}
+nav ul li a {
+    display:inline-block;
+    color:#e7e7e7;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul li.active a {
+    color: #9ddbd4;
+}
+nav ul li a:hover {
+    color:black;
+}
+
+main {
+    text-align: center;
+    color: #e7e7e7;
+    background-color: #2f4154;
+    padding: 0;
+}
+main figure.franklin { width:100%; margin: 0; }
+main figure.franklin img {width:100%}
+main h2 {
+    font-size: 37px;
+    color: #9ddbd4;
+}
+main figure.lightening { width:50%; margin: 0 0 0 25%; }
+main figure.lightening img {width:100%}
+
+table{
+    border-collapse: collapse;
+    width:100%
+}
+th, td{
+    text-align: left;
+    padding: 8px;
+    color: #579b91;
+    background-color:#e7e7e7;
+}
+.forecast {
+    color: #9ddbd4;
+        }
+h3 {
+    color: #9ddbd4;
+    font-size: 37px;
+}
+
+footer {
+    text-align: center;
+    color: #579b91;
+    background-color: #2f4154;
+    padding: 20px;
+    }
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
