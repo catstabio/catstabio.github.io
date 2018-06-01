@@ -1,7 +1,5 @@
-/* Delete these CSS comments after reading. */
-/* This main css file contains the default rules and is geared toward the small/phone view */
 
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+{ box-sizing: border-box;}  
 
 body {
   font-size: 16px;
@@ -9,7 +7,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+header, nav, main, footer 
   max-width: ______; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
@@ -36,7 +34,10 @@ nav {
     background-color:#579b91;
 }
 nav button {
-    margin: .2rem 2%;
+    display: block;
+    position: absolute;
+    top: 3rem;
+    right: .2rem;
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
@@ -48,24 +49,27 @@ nav ul {
     padding:0;
 }
 nav ul li {
-    display:inline;
-}
-nav ul li a {
-    display: block;
-    color:#e7e7e7;
-    padding: .8rem 2%;
-    text-decoration: none;
-    border-top: 1px solid rgba(0,0,0,0.25)
-}
-nav ul li.active a {
-    background-color: rgba(0,0,0,0.2);
-}
-nav ul li a:hover {
-    background-color: rgba(0,0,0,0.25);
+    display:none;
 }
 
-nav ul.hid {
-    display: none;
+@media only screen and (max-width:37.5em){
+
+    #primaryNav.hide {
+        position: relative;
+    }
+    #primaryNav.hide li {
+        background-color: #579b91;
+        display: block;
+        width: 100%; margin: 2px 0; 
+    }
+    
+    #primaryNav.hide li a {
+        padding: 1rem; 
+        text-align: center;
+        display: block;
+        text-decoration: none;
+    }
+
 }
 
 main {
