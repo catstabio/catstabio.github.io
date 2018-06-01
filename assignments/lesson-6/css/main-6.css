@@ -8,8 +8,7 @@ body {
 }
 
 header, nav, main, footer 
-  max-width: ______; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
-}
+  max-width: 100%;
 
 header {
     color: #e7e7e7;
@@ -98,8 +97,10 @@ th, td{
     background-color:#e7e7e7;
 }
 .forecast {
+    display: none;
     color: #9ddbd4;
         }
+
 h3 {
     color: #9ddbd4;
     font-size: 37px;
