@@ -26,11 +26,11 @@
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
     	   <li><a href="#">Home</a></li>
-    	   <li class="active"><a href="#">Franklin</a></li>
+    	   <li class="lesson-7/franklin-7.html"><a href="#">Franklin</a></li>
     	   <li><a href="#">Greenville</a></li>
     	   <li><a href="#">Springfield</a></li>
     	   <li><a href="#">Storm Center</a></li>
-    	   <li><a href="#">Gallery</a></li>
+    	   <li><a href="lesson-7/gallery-7.html">Gallery</a></li>
         </ul>		
     </nav>
     
@@ -48,19 +48,17 @@
       <section class="weather-summary">
       <h3>Weather Summary</h3>    
       <div class="highlow">
-        <p> <span id="highTemp">High: 90</span>&deg;F</p>  
-        <p> <span id="lowTemp">Low: 85</span>&deg;F</p>  
+        <div>High: <span id="highTemp">90</span>&deg;F</div>  
+        <div>Low: <span id="lowTemp">85</span>&deg;F</div>  
       </div>
       <div class="current">
         Thunderstorms <br>
       </div>   
       <div class="conditions">
         <p>Precipitation:100%</p>  
-        <p><span id="windSpeed">Wind Speed:15mph</span></p>
+        <div>Wind Speed:<span id="windSpeed">15</span>mph</div>
        </div>
-      <div id="windChill">
-          <p>Wind Chill Factor</p> 
-     </div>           
+          <div>Wind Chill Factor: <span id="windChill"></span>&deg;F</div>          
     </section>
         
     <section class="forecast">

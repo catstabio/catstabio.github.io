@@ -11,6 +11,7 @@ header, nav, main, footer
   max-width: 100%;
 
 header {
+    color: #e7e7e7;
     background-color: #2f4154;
     padding: .5rem 2%;
 }
@@ -121,3 +122,17 @@ footer {
 }
 
 /* gallery page */
+
+    
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 20px;
+        align-items: stretch;
+        
+    }
+    .gallery img{
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+        max-width: 100%
+    }
