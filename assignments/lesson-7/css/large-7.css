@@ -4,5 +4,15 @@
     nav ul li a{
         padding: .6rem 1rem;
     }
+    
+    .images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    img:hover {
+        box-shadow: 5px 5px 10px black;
+    }
 }
+
 

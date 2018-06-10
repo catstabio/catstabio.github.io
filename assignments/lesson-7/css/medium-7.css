@@ -50,5 +50,9 @@
     align-items: center;
     color: #9ddbd4;
         }
+   
+    .images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     
 }
