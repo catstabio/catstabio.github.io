@@ -51,7 +51,7 @@
     color: #9ddbd4;
         }
    
-    .images {
+    .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr;
     

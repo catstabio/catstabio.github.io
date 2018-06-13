@@ -5,12 +5,12 @@
         padding: .6rem 1rem;
     }
     
-    .images {
+    .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
     
-    img:hover {
+    figure:hover {
         box-shadow: 5px 5px 10px black;
     }
 }
