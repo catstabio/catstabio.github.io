@@ -1,0 +1,151 @@
+
+{ box-sizing: border-box;}  
+
+body {
+  font-size: 16px;
+    
+    font-family: 'Roboto', sans-serif;
+}
+
+header, nav, main, footer {
+  max-width: 100%;
+    background-color: #2f4154;
+}
+header {
+    color: #e7e7e7;
+    text-align: center;
+    }
+
+header img {
+    width: 100px;
+    padding: 25px 25px 0px 25px;
+}
+
+.heading {
+    position: absolute;
+    margin: 1em 0;
+}
+
+.subheading {
+    padding: 10px 0;
+}
+@media only screen and (max-width:37.5em){
+nav {
+    background-color:#579b91;
+}
+nav button {
+    color: #9ddbd4;
+    background-color: transparent;
+    font-size: 1.6rem;
+    padding:10px 20px;
+    position: absolute;
+    top: 3rem;
+    right: .2rem;
+    border: none;
+    }
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+nav ul li {
+    display:none;
+}
+
+    #primaryNav.hide {
+        position: relative;
+    }
+    #primaryNav.hide li {
+        background-color: #579b91;
+        display: block; 
+        width: 100%; margin: 2px 0; 
+    }
+    
+    #primaryNav.hide li a {
+        padding: 1rem; 
+        text-align: center;
+        display: block; 
+        text-decoration: none;
+    }
+
+}
+main {
+    text-align: center;
+    color: #e7e7e7;
+    padding: 0;
+}
+main figure.franklin { width:100%; margin: 0; }
+main figure.franklin img {width:100%}
+main h2 {
+    font-size: 37px;
+    color: #9ddbd4;
+}
+main figure.lightening { width:50%; margin: 0 0 0 25%; }
+main figure.lightening img {width:100%}
+
+table{
+    border-collapse: collapse;
+    width:100%
+}
+th, td{
+    text-align: left;
+    padding: 8px;
+    color: #579b91;
+    background-color:#e7e7e7;
+}
+.forecast {
+    display: none;
+    color: #9ddbd4;
+        }
+
+h3 {
+    color: #9ddbd4;
+    font-size: 37px;
+}
+
+
+footer {
+    text-align: center;
+    color: #579b91;
+    padding: 20px;
+    }
+
+
+/* gallery page */
+
+h1 {
+    padding: 20px;
+}
+
+.gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 10px;
+        
+    }
+    .article-img {
+        display: block;
+        padding: 10px;
+    }
+
+figure {
+    display: block;
+    background-color: #e7e7e7;
+    padding: 10px 10px 0 10px;
+}
+
+ .article-img img  {
+    display: block;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 0px 0px;
+}
+
+figcaption {
+    padding: 5px 0;
+    color: #2f4154;
+    font-size: 12px;
+}
+
+
+    
