@@ -24,7 +24,7 @@
   </header>
     <nav class="nav">
         <button onclick="toggleMenu()">&#9776;</button>
-        <ul id="primaryNav" class="hide">
+        <ul id="primaryNav">
     	   <li><a href="#">Home</a></li>
     	   <li><a href="franklin-8.html">Franklin</a></li>
     	   <li><a href="#">Greenville</a></li>
@@ -39,16 +39,16 @@
     <form method="get" action="thanks.html">
         <fieldset>
             <legend> User Information</legend>
-            <label class="top"> First Name*<input type="text" name="fname" required> </label>
-            <label class="top"> E-mail<input type="email" name="email" placeholder="emailhere@yahoo.com"></label>
-            <label class="top"> Phone Number*<input type="tel" name="phone" required></label>
-            <label class="top"> Zip Code*<input type="number" name="zip" required></label>
+            <label class="top"> <span> First Name*</span><input type="text" name="fname" required> </label>
+            <label class="top"> <span> E-mail</span><input type="email" name="email" placeholder="emailhere@yahoo.com"></label>
+            <label class="top"> <span>Phone Number*</span><input type="tel" name="phone" required></label>
+            <label class="top"> <span> Zip Code*</span><input type="number" name="zip" required></label>
             </fieldset>
         
         <fieldset>
         <legend> Storm Information </legend>
-           <label class="top"> Storm Date <input type="date" name="date"></label>
-            <label class="top">Type of Storm
+           <label class="top"> <span>Storm Date</span><input type="date" name="date"></label>
+            <label class="top"> <span>Type of Storm </span>
                 <select name="stormType">
                     <datalist class="storms">
                     <option value=""> </option>
@@ -60,10 +60,10 @@
                     </datalist>
                 </select>
             </label>
-            <label class="top">Storm Severity <input type="range" name="range" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjudstRating(this.value)">
+            <label class="top"> <span>Storm Severity </span> <input type="range" name="range" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjudstRating(this.value)">
                 <span id="ratingvalue">5</span><br>
             </label>
-            <label class="top">Storm Region
+            <label class="top"><span>Storm Region</span>
                 <select name="region">
                     <option value="">Select Region &#9662;</option>
                     <option value="franklin">Franklin</option>
@@ -71,14 +71,14 @@
                     <option value="springfield">Springfield</option>
                 </select>
             </label>
-            <legend> Are you in danger?</legend>
+            <legend> <span>Are you in danger?</span></legend>
             <label class="sbs"><input type="radio" name="danger" value="yes"> Yes </label>
             <label class="sbs"><input type="radio" name="danger" value="no"> No </label>
             <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe </label>
             </fieldset>
             <fieldset>
                 <legend> Additional Information or Comments</legend>
-                <label class="top"><input type="textarea" name="commentbox"></label>
+                <textarea name="commentbox"></textarea>
         </fieldset>
         
         
@@ -86,12 +86,7 @@
             
     
     </form>
-    
-    
     </main> 
-    
-    
-    
     
     
     
