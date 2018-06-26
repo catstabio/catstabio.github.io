@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Come Rain or Shine Weather Report</title>
+      <meta name="description" content="Come Rain or Shine weather report for the tri-city area.">   
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/medium.css">
+      <link rel="stylesheet" href="css/large.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+<body>
+<header> 
+       <img src="images/weather-logo.png" alt="logo"
+            srcset="images/weather-logo.png 1x, images/weather-logo.png 2x,images/weather-logo.png 3x"> 
+    <section class="headings">
+        <h1> Come Rain or Shine</h1>
+        <h5>"Ray Charles said it best- We are with you rain or shine!"</h5>
+        </section>
+  </header>
+    <nav class="nav">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav">
+    	   <li class="active"><a href="tricity-index.html">Home</a></li>
+    	   <li><a href="franklin.html">Franklin</a></li>
+    	   <li><a href="greenville.html">Greenville</a></li>
+    	   <li><a href="springfield.html">Springfield</a></li>
+    	   <li><a href="stormcenter.html">Storm Center</a></li>
+    	   <li><a href="gallery.html">Gallery</a></li>
+        </ul>		
+    </nav>
+    
+     <main>
+    <figure class="franklin">
+         <img src="images/franklin-opt.jpg" alt="Tri-city Town"
+              sizes="50vw"
+              srcset="images/franklin-200.jpg 200w, 
+                    images/franklin-500.jpg 500w,
+                      images/franklin-800.jpg 800w,">
+    </figure>
+      <h1>Springfield</h1>
+      <section class="weather-summary">
+      <h2>Weather Summary</h2>  
+           <p><span id="weather"></span></p>
+          <p>Current Temperature: <span id="current-tempS"></span>&deg;F</p>
+          <p>Weather Description: <span id="weatherDescriptionS"></span></p>
+          <p>Wind Speed: <span id="windSpeedS"></span> mph</p>
+          <img src="" id="weatherimage">
+    </section>
+        
+    <section class="forecast">
+    <h2>Ten Day Forecast</h2>
+    <div style="overflow-x:auto;">
+      <table>
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+	</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+	</tbody>
+      </table>
+    </div>
+    </section>
+      
+    <article>
+        <div class ="left">
+      <img src="images/tornado.jpg" alt="Tornado">
+           </div>
+        <div class = "right">
+            <h3>Trees ripped up after recent tornado</h3>
+      <p class = "record">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> 
+        Integer dictum urna dui. Ut imperdiet facilisis sapien.<br>
+        Nunc ultrices sem eget ligula hendrerit pulvinar non et tellus.<br>
+      </p>
+        </div>
+    </article>		  
+  
+  </main>
+    
+    
+    
+    
+    <footer>
+    <section class="contact">
+      Come Rain or Shine <br>
+      999.999.9999 <br>
+      123 Main St. Anytown, US 99999<br>
+      Google Map
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Weather Report Tri-City Area | <span id="currentdate">Testing</span>
+    </section>
+  </footer>
+
+    <script src="scripts/currentdate.js" type="text/javascript"></script>
+   
+    
+    <script src="scripts/hamburger.js" type="text/javascript"></script>
+    
+    <script src="scripts/weatherS.js"></script>
+    
+    <script defer src="scripts/navigation.js"></script>
+    
+
+</body>
+</html>

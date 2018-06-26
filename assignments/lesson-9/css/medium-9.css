@@ -80,7 +80,15 @@ main article {
     
 }
 
-article:nth-child(odd) {
-    flex-direction: row-reverse;
+.cityInfo .fgs {
+    display: flex;
+    justify-content: space-evenly;
 }
 
+.leftColumn {
+    flex: 1;
+}
+
+.rightColumn {
+    flex: 1;
+}

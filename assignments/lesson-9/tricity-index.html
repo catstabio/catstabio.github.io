@@ -23,10 +23,10 @@
     <nav class="nav">
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav">
-    	   <li><a href="tricity-index.html">Home</a></li>
+    	   <li class="active"><a href="tricity-index.html">Home</a></li>
     	   <li><a href="franklin-9.html">Franklin</a></li>
     	   <li><a href="#">Greenville</a></li>
-    	   <li><a href="#">Springfield</a></li>
+    	   <li><a href="">Springfield</a></li>
     	   <li><a href="stormcenter.html">Storm Center</a></li>
     	   <li><a href="gallery-9.html">Gallery</a></li>
         </ul>		
@@ -37,26 +37,57 @@
         <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
         <img src ="images/redbarn.jpg" alt="story";>
         
-        <article>
-        <div class = "franklin">
-            <h3>Franklin</h3>
-        <img src="images/franklinpic.jpg" alt="franklin";>
-        <p> Motto: <span id="Franklinmotto"></span> <br>
-        </div>
-        </article>
-        <article>
-        <div class = "greenville">
-        <h3>Greenville</h3>
-        <img src="images/greenvillepic.jpg" alt="greenville";>
-        </div>
-            </article>
-            <article>
-        <div class = "springfield">
-        <h3>Springfield</h3>
-        <img src="images/springfieldpic.jpg" alt="springfield";>
+        <section class="cityInfo">
+        <div class = "fgs">
+            <div class ="leftColumn">
+        <img src="images/franklinpic.jpg" alt="franklin">
             </div>
-        </article>
-    
+            <div class ="rightColumn">
+                <aside class="information">
+                    <h4 id="franklinName">Franklin</h4><br>
+                    <p>Motto:</p><br>
+                    <p>Founded:</p><br>
+                    <p>Population:</p><br>
+                    <p>Average Rainfall:</p><br>
+                </aside>
+            </div>
+            </div>
+            </section>
+            
+            
+            <section class="cityInfo">
+        <div class = "fgs">
+            <div class ="leftColumn">
+        <img src="images/greenvillepic.jpg" alt="greenville">
+            </div>
+            <div class ="rightColumn">
+                <aside class="information">
+                    <h4 id="greenvilleName">Greenville</h4><br>
+                    <p>Motto:</p><br>
+                    <p>Founded:</p><br>
+                    <p>Population:</p><br>
+                    <p>Average Rainfall:</p><br>
+                </aside>
+            </div>
+                </div>
+            </section>
+                
+                <section class="cityInfo">
+        <div class = "fgs">
+            <div class ="leftColumn">
+        <img src="images/springfieldpic.jpg" alt="springfield">
+            </div>
+            <div class ="rightColumn">
+                <aside class="information">
+                    <h4 id="franklinName">Springfield</h4><br>
+                    <p>Motto:</p><br>
+                    <p>Founded:</p><br>
+                    <p>Population:</p><br>
+                    <p>Average Rainfall:</p><br>
+                </aside>
+            </div>
+                    </div>
+            </section>
     </main>
     
     
@@ -81,6 +112,8 @@
     type="text/javascript"></script>
     
      <script src="scripts/weather.js"></script>
+    
+    <script src="scripts/navigation.js"></script>
 
 </body>
 </html>

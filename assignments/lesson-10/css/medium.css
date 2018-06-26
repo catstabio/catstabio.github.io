@@ -1,0 +1,94 @@
+@media only screen and (min-width:37.5em) {
+
+    nav button { display:none; } 
+    
+    section.forecast { ______ }  /* show the 10-day forecast with the medium view and up */
+
+    header, nav {
+        margin: 0 auto;
+        max-width: 960px;
+    }
+    h1 {
+        text-align: center;
+    }
+    #primaryNav {
+        background-color: #579b91;
+    }
+        
+    
+    #primaryNav li {
+       display: inline-flex; 
+        margin-left: .25rem;
+        background-color: #579b91;}
+    }
+    
+    #primaryNav a {
+      display: flex; 
+        color: #e7e7e7;
+        padding: .5rem;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    #primaryNav a:hover {
+        color: #9ddbd4;
+        background-color: #2f4154;
+    }
+    
+    table{
+    border-collapse: collapse;
+    width:100%
+    }
+    
+    th, td{
+    text-align: left;
+    padding: 8px;
+    color: #579b91;
+    background-color:#e7e7e7;
+    }
+    
+    .forecast {
+        display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #9ddbd4;
+        }
+
+main article {
+    display: flex;
+    flex-flow: row;
+}
+
+.right {
+    flex: 0 1 auto;
+    width: 100%;
+    padding-top: 8%;
+}
+
+.left {
+    flex: 0 1 auto;
+    width: 100%;
+}
+
+.record {
+    padding-left: 10%;
+    padding-top: 0;
+}
+   
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    
+}
+
+.cityInfo .fgs {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.leftColumn {
+    flex: 1;
+}
+
+.rightColumn {
+    flex: 1;
+}
