@@ -110,6 +110,7 @@ th, td{
     background-color:#e7e7e7;
 }
 .forecast {
+    clear:both;
     display: none;
     color: #9ddbd4;
         }
@@ -128,7 +129,6 @@ footer {
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
 
 
@@ -182,7 +182,6 @@ fieldset {
 }
 
 legend {
-    color: #e7e7e7;
     margin: 0 1rem;
     padding: 0 .5rem;
 }
@@ -193,7 +192,8 @@ input {
 
 label {
     display: flex;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     padding-top: 1rem;
     color: #9ddbd4;
   
@@ -204,13 +204,20 @@ label > span {
     
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0 0 20px;
-    align-content: space-around;
+#legendtest {
+    text-align: left;
+    padding-top: 15px;
+    color: #9ddbd4;
 }
 
+#ratingvalue {
+    width: 10%;
+}
+
+.sbs {
+    color: #e7e7e7;
+    padding: 10px 30px 0px 40px;
+}
 
 
 textarea {
@@ -236,7 +243,16 @@ textarea {
 /*Home page */
 
 .franklin {
-    width: 100%;
+    max-width: 100%;
+    padding: 20px;
 }
 
-    
+.greenville {
+    max-width: 100%;
+    padding: 20px;
+}
+
+.springfield {
+    max-width: 100%;
+    padding: 20px;
+}

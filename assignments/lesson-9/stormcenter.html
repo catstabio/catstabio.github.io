@@ -48,7 +48,6 @@
         
         <fieldset>
         <legend> Storm Information </legend>
-            <div class = "grid">
            <label class="top"><span>Storm Date</span><input type="date" name="date"></label>
             <label class="top"><span>Type of Storm</span>
                 <select name="stormType">
@@ -67,17 +66,16 @@
             </label>
             <label class="top"><span>Storm Region</span>
                 <select name="region">
-                    <option value="">Select Region &#9662;</option>
+                    <option value="">Select Region</option>
                     <option value="franklin">Franklin</option>
                     <option value="greenville">Greenville</option>
                     <option value="springfield">Springfield</option>
                 </select>
             </label>
-            <legend><span>Are you in danger?</span></legend>
+            <legend id ="legendtest"><span>Are you in danger?</span></legend>
             <label class="sbs"><input type="radio" name="danger" value="yes"> Yes </label>
             <label class="sbs"><input type="radio" name="danger" value="no"> No </label>
             <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe </label>
-                </div>
             </fieldset>
             <fieldset>
                 <legend> Additional Information or Comments</legend>

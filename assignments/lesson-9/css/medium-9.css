@@ -48,10 +48,9 @@
     }
     
     .forecast {
-    display: flex;
+        display:flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
     color: #9ddbd4;
         }
 
@@ -80,3 +79,8 @@ main article {
         grid-template-columns: 1fr 1fr;
     
 }
+
+article:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+

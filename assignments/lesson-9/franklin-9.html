@@ -42,21 +42,13 @@
                       images/franklin-800.jpg 800w,">
     </figure>
       <h1>Franklin</h1>
-      
       <section class="weather-summary">
-      <h2>Weather Summary</h2>    
-      <div class="highlow">
-        <div>High: <span id="highTemp">90</span>&deg;F</div>  
-        <div>Low: <span id="lowTemp">85</span>&deg;F</div>  
-      </div>
-      <div class="current">
-        Thunderstorms <br>
-      </div>   
-      <div class="conditions">
-        <p>Precipitation:100%</p>  
-        <div>Wind Speed:<span id="windSpeed">15</span>mph</div>
-       </div>
-          <div>Wind Chill Factor: <span id="windChill"></span>&deg;F</div>          
+      <h2>Weather Summary</h2>  
+           <p><span id="weather"></span></p>
+          <p>Current Temperature: <span id="current-temp"></span>&deg;F</p>
+          <p>Weather Description: <span id="script"></span></p>
+          <p>Wind Speed: <span id="windSpeed"></span> mph</p>
+          <img src="" id="weatherimage">
     </section>
         
     <section class="forecast">
@@ -127,8 +119,8 @@
     
     <script src="scripts/hamburger.js" type="text/javascript"></script>
     
-    <script src="scripts/windchill.js"
-    type="text/javascript"></script>
+    <script src="scripts/weather.js"></script>
+    
 
 </body>
 </html>
