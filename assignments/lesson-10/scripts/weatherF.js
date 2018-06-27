@@ -7,7 +7,7 @@ weatherRequest.onload = function () {
     let weatherData = JSON.parse(weatherRequest.responseText);
     //console.log(weatherData);
     document.getElementById('current-tempF').innerHTML = weatherData.main.temp;
-    document.getElementById('weatherDescriptionF').innerHTML = weatherData.weather.description;
+    document.getElementById('weatherDescriptionF').innerHTML = weatherData.weather[0].description;
     document.getElementById('windSpeedF').innerHTML = weatherData.wind.speed;
     let imagesrc = "http://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png";
     document.getElementById('weatherimage').src = imagesrc;
