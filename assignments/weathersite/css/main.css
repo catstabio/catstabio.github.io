@@ -1,5 +1,4 @@
-
-{ box-sizing: border-box;}  
+  
 
 body {
   font-size: 16px;
@@ -15,21 +14,26 @@ header {
     display: flex;
     background-color: #2f4154;
     color: #e7e7e7;
+    align-items: center;
+    justify-content: space-between;
     text-align: center;
     }
 
-header img {
-    padding: 25px 25px 0px 25px;
+.logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
 }
 
-.heading {
-    position: absolute;
-    margin: 1em 0;
+.headings {
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+    margin: .5em 0;
 }
 
-.subheading {
-    padding: 10px 0;
-}
+
 @media only screen and (max-width:37.5em){
 nav {
     background-color:#579b91;
@@ -124,15 +128,38 @@ h3 {
     color: #579b91;
 }
 
+picture {
+    display: block;
+    padding: 10px 10px 0px 10px;
+}
+
+.top-image {
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom right;
+}
+
+.weather-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conditons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 
 footer {
     text-align: center;
-    color: #9ddbd4;
+    color: #579b91;
     padding: 20px;
     font-size: 10px;
     }
 footer a {
-    color: #9ddbd4;
+    color: #579b91;
 }
 
 * {
@@ -257,7 +284,7 @@ textarea {
 
 
 .cityInfo .fgs {
-    display: flex-inline;
+    display: inline-flex;
 }
 
 .leftColumn {

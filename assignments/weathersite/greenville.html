@@ -13,12 +13,18 @@
   </head>
 <body>
 <header> 
-       <img src="images/weather-logo.png" alt="logo"
-            srcset="images/weather-logo.png 1x, images/weather-logo.png 2x,images/weather-logo.png 3x"> 
-    <section class="headings">
+        <div class="logo">
+            <picture>
+      <a href="tricity-index.html"> <img src="images/weather-logo.png" alt="logo" srcset="images/weather-logo.png 1x, images/weather-logo.png 2x,images/weather-logo.png 3x">
+                </a>
+            </picture>
+    <div class="title">
         <h1> Come Rain or Shine</h1>
+    <div class="subheading">
         <h5>"Ray Charles said it best- We are with you rain or shine!"</h5>
-        </section>
+        </div>
+        </div>
+        </div>
   </header>
     <nav>
         <button onclick="toggleMenu()">&#9776;</button>
@@ -33,13 +39,9 @@
     </nav>
     
      <main>
-    <figure class="franklin">
-         <img src="images/franklin-opt.jpg" alt="Tri-city Town"
-              sizes="50vw"
-              srcset="images/franklin-200.jpg 200w, 
-                    images/franklin-500.jpg 500w,
-                      images/franklin-800.jpg 800w,">
-    </figure>
+    <picture>
+         <img class="top-image" src="images/greenvillepic.jpg" alt="Tri-city Town">
+    </picture>
       <h1>Greenville</h1>
       <section class="weather-summary">
       <h2>Weather Summary</h2>  
@@ -47,7 +49,7 @@
           <p>Current Temperature: <span id="current-tempG"></span>&deg;F</p>
           <p>Weather Description: <span id="weatherDescriptionG"></span></p>
           <p>Wind Speed: <span id="windSpeedG"></span> mph</p>
-          <img src="" id="weatherimage">
+          <img src="" id="weatherimage" alt="icon">
     </section>
         
     <section class="forecast">

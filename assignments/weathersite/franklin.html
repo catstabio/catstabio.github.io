@@ -13,12 +13,18 @@
   </head>
 <body>
 <header> 
-       <img src="images/weather-logo.png" alt="logo"
-            srcset="images/weather-logo.png 1x, images/weather-logo.png 2x,images/weather-logo.png 3x"> 
-    <section class="headings">
+        <div class="logo">
+            <picture>
+       <a href="tricity-index.html"> <img src="images/weather-logo.png" alt="logo" srcset="images/weather-logo.png 1x, images/weather-logo.png 2x,images/weather-logo.png 3x">
+                </a>
+            </picture>
+    <div class="title">
         <h1> Come Rain or Shine</h1>
+    <div class="subheading">
         <h5>"Ray Charles said it best- We are with you rain or shine!"</h5>
-        </section>
+        </div>
+        </div>
+        </div>
   </header>
     <nav>
         <button onclick="toggleMenu()">&#9776;</button>
@@ -34,22 +40,21 @@
 
     
   <main>
-    <figure class="franklin">
-         <img src="images/franklin-opt.jpg" alt="Tri-city Town"
-              sizes="50vw"
-              srcset="images/franklin-200.jpg 200w, 
-                    images/franklin-500.jpg 500w,
-                      images/franklin-800.jpg 800w,">
-    </figure>
-      <h1>Franklin</h1>
+      <div class="summary">
+    <picture>
+         <img class="top-image" src="images/franklinpic.jpg" alt="Franklin scenery">
+    </picture>
       <section class="weather-summary">
-      <h2>Weather Summary</h2>  
+           <h1 id="name">Franklin</h1>
+          <div class="conditions">
            <p><span id="weather"></span></p>
           <p>Current Temperature: <span id="current-tempF"></span>&deg;F</p>
           <p>Weather Description: <span id="weatherDescriptionF"></span></p>
           <p>Wind Speed: <span id="windSpeedF"></span> mph</p>
-          <img src="" id="weatherimage">
+          <img src="" id="weatherimage" alt="icon">
+         </div>
     </section>
+    </div>
         
     <section class="forecast">
     <h2>Ten Day Forecast</h2>
@@ -97,6 +102,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> 
         Integer dictum urna dui. Ut imperdiet facilisis sapien.<br>
         Nunc ultrices sem eget ligula hendrerit pulvinar non et tellus.<br>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
       </p>
         </div>
     </article>		  
