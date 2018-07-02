@@ -9,10 +9,11 @@ body {
 
 header, nav, main, footer {
   max-width: 100%;
-    background-color: #2f4154;
+ 
 }
 header {
     display: flex;
+    background-color: #2f4154;
     color: #e7e7e7;
     text-align: center;
     }
@@ -67,21 +68,21 @@ nav ul li {
         display: flex; 
         text-decoration: none;
     }
-    
-    nav ul li.active a {
-        background: linear-gradient(#147429 0%, #1a9835 100%);
-     }
 
 }
+
+.active {
+        background: linear-gradient(#2f4154 0%, #2f4154 100%);
+     }
 main {
     text-align: center;
-    color: #e7e7e7;
+    color: #2f4154;
     padding: 0 2%;
 }
 main figure.franklin { width:100%; margin: 0; }
 main figure.franklin img {width:100%}
 main h2 {
-    color: #9ddbd4;
+    color: #579b91;
     padding: 20px;
 }
 
@@ -110,8 +111,8 @@ table{
 th, td{
     text-align: left;
     padding: 8px;
-    color: #579b91;
-    background-color:#e7e7e7;
+    color: #e7e7e7;
+    background-color:#579b91;
 }
 .forecast {
     clear:both;
@@ -120,7 +121,7 @@ th, td{
         }
 
 h3 {
-    color: #9ddbd4;
+    color: #579b91;
 }
 
 
@@ -144,7 +145,7 @@ footer a {
 
 h1 {
     padding: 20px;
-    color: #9ddbd4;
+    color: #579b91;
 }
 
 .gallery {
@@ -203,7 +204,7 @@ label {
     align-items: flex-start;
     justify-content: flex-start;
     padding-top: 1rem;
-    color: #9ddbd4;
+    color: #579b91;
   
 }
 
@@ -215,7 +216,7 @@ label > span {
 #legendtest {
     text-align: left;
     padding-top: 15px;
-    color: #9ddbd4;
+    color: #579b91;
 }
 
 #ratingvalue {
@@ -223,7 +224,7 @@ label > span {
 }
 
 .sbs {
-    color: #e7e7e7;
+    color: #2f4154;
     padding: 10px 30px 0px 40px;
 }
 

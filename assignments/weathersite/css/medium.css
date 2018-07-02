@@ -19,7 +19,7 @@
     #primaryNav li {
        display: inline-flex; 
         margin-left: .25rem;
-        background-color: #579b91;}
+        background-color: #579b91;
     }
     
     #primaryNav a {
@@ -43,12 +43,12 @@
     th, td{
     text-align: left;
     padding: 8px;
-    color: #579b91;
-    background-color:#e7e7e7;
+    color: #e7e7e7;
+    background-color:#2f4154;
     }
     
     .forecast {
-        display:flex;
+    display:flex;
     flex-direction: column;
     justify-content: space-around;
     color: #9ddbd4;
@@ -91,4 +91,5 @@ main article {
 
 .rightColumn {
     flex: 1;
+}
 }
