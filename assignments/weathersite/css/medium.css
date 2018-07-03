@@ -50,17 +50,7 @@
     }
     
     .summary {
-        flex: 1 1 50%;
         padding-top: 20px;
-    }
-    
-    .weather-summary {
-        padding: 5px 0;
-        flex: 1 1 50%;
-    }
-    
-    #name {
-        display:flex;
     }
     
     .conditons {
