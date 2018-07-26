@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Cycle the Continental Divide Event</title>
+      <meta name="description" content="A registration form, route information, and event information for the Continental Divide.">   
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/poco.css">
+      <link rel="stylesheet" href="css/mediano.css">
+      <link rel="stylesheet" href="css/grande.css">
+      <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  </head>
+    <body>
+<header> 
+     <div class="logo">
+       <a href="bicycles.html"> <img src="images/logo.png" alt="logo">
+                </a>
+        <div class="heading">
+        <h1> The Mountain Spoke</h1>
+            <div class="subheading">
+        <h5>Think Globally, Cycle Locally</h5>
+                </div>
+                </div>
+        </div>
+  </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" >
+    	   <li class="active"><a href="bicycles.html">Home</a></li>
+    	   <li><a href="adventuretours.html">Adventure Tours</a></li>
+    	   <li><a href="events.html">Events</a></li>
+    	   <li><a href="sales.html">Sales</a></li>
+           <li><a href="services.html"> Services</a></li>
+    	   <li><a href="contact.html">Contact Us</a></li>
+        </ul>		
+    </nav>
+        <main>
+            <img class="divide" src="images/continental-divide.jpg" alt="continental divide"> 
+             <h1>Cycle the Continental Divide </h1>
+            <p id="eventpage"> This annual event brings together some of the best bikers in the world. It's an opportunity to give money to charity while cycling the beautiful north to south trail.The ride has spectacular terrain and scenery. The entire route is dirt-road and mountain-pass riding every day.</p>
+            <div class="eventinfo">
+                <p><strong>Start Date: </strong><small>October 8, 2018 </small><br>
+               <strong>End Date: </strong><small>November 8, 2018 </small><br>
+                <strong> Trail Location: </strong><small>Banff, Alberta Canada to Antelope Wells, New Mexico</small><br>
+                <strong>Skill Level:</strong> <small>Advanced</small> <br>
+                <strong>Price:</strong> <small>$525.00</small></p>
+            </div>
+    
+    <form method="get" action="registered.html">
+        <fieldset>
+            <legend> Biker Information</legend>
+            <label class="top"> <span> First Name</span><input type="text" name="fname" required> </label>
+            <label class="top"> <span> Last Name</span><input type="text" name="lname" required> </label>
+            <label class="top"> <span> E-mail</span><input type="email" name="email" placeholder="emailhere@yahoo.com" required> </label>
+            <label class="top"> <span>Phone Number</span><input type="tel" name="phone" required></label>
+            <label class="top"> <span> Birthday </span><input type="date" name="bday" required></label>
+            <label class="top"><span>State</span>
+                <select name="state">
+                    <option value="">Select State</option>
+                    <option value="alabama">Alabama</option>
+                    <option value="alaska">Alaska</option>
+                    <option value="arizona">Arizona</option>
+                    <option value="arkansas">Arkansas</option>
+                     <option value="california">California</option>
+                     <option value="colorado">Colorado</option>
+                     <option value="conneticut">Connecticut</option>
+                     <option value="deleware">Delaware</option>
+                     <option value="florida">Florida</option>
+                     <option value="georgia">Georgia</option>
+                     <option value="hawaii">Hawaii</option>
+                     <option value="idaho">Idaho</option>
+                     <option value="illinois">Illinois</option>
+                     <option value="indiana">Indiana</option>
+                     <option value="iowa">Iowa</option>
+                     <option value="kansas">Kansas</option>
+                     <option value="kentucky">Kentucky</option>
+                     <option value="louisiana">Louisiana</option>
+                     <option value="maine">Maine</option>
+                     <option value="maryland">Maryland</option>
+                     <option value="massachusets">Massachusetts</option>
+                     <option value="michigan">Michigan</option>
+                     <option value="minnesota">Minnesota</option>
+                    <option value="mississippi">Mississippi</option>
+                     <option value="missouri">Missouri</option>
+                     <option value="montana">Montana</option>
+                     <option value="nebraska">Nebraska</option>
+                     <option value="nevada">Nevada</option>
+                     <option value="new hampshire">New Hampshire</option>
+                     <option value="new jersey">New Jersey</option>
+                     <option value="new mexico">New Mexico</option>
+                     <option value="new york">New York</option>
+                     <option value="north carolina">North Carolina</option>
+                     <option value="north dakota">North Dakota</option>
+                     <option value="ohio">Ohio</option>
+                     <option value="oklahoma">Oklahoma</option>
+                     <option value="oregon">Oregon</option>
+                     <option value="pennsylvania">Pennsylvania</option>
+                     <option value="rhode island">Rhode Island</option>
+                     <option value="south carolina">South Carolina</option>
+                     <option value="south dakota">South Dakota</option>
+                     <option value="tennessee">Tennessee</option>
+                     <option value="texas">Texas</option>
+                     <option value="utah">Utah</option>
+                     <option value="vermont">Vermont</option>
+                     <option value="virgina">Virginia</option>
+                     <option value="washington">Washington</option>
+                     <option value="west virgina">West Virginia</option>
+                     <option value="wisconsin">Wisconsin</option>
+                     <option value="wyomming">Wyoming</option>
+                    </select>
+            </label>
+        </fieldset>
+        <fieldset>
+                <legend> Additional Accomodations or Comments</legend>
+                <textarea name="commentbox"></textarea>
+        </fieldset>
+        
+            <input type="submit" value="Enter Registration Information" class="submitBtn">
+        
+    </form>
+</main>
+<footer>
+    <section class="contact">
+        &copy;2018 | All Rights Reseved | The Mountain Spoke<br>
+        Images from <a href="https://unsplash.com/">Unsplash</a>
+    </section>
+</footer>
+
+        
+        <script src="js/menu.js"></script>
+         <script src="js/nav.js"></script>
+</body>
+</html>

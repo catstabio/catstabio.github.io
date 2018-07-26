@@ -1,0 +1,416 @@
+body {
+    font-family: 'Merriweather', serif;
+}
+
+header {
+    display: flex;
+    background-color: #82A3A1;
+    color: #e7e7e7;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    }
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    width: 350px;
+    padding: 10px;
+}
+
+.heading {
+    padding: 20px;
+}
+
+
+@media only screen and (max-width:37.5em){
+    
+    header, nav, main, footer {
+        max-width: 100%;
+    }
+    
+nav {
+    background-color: #E28413;
+}
+    nav button {
+     color: #465362;
+    background-color: transparent;
+     font-size: 2rem;
+}
+    nav ul {
+        padding: 0;
+    }
+
+nav li{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    list-style-type: none;
+    display: inline-block;
+}
+    
+    nav ul li {
+        display: none;
+    }
+   
+    #primaryNav.hide li {
+        display: flex; 
+    }
+    
+    #primaryNav.hide li a {
+        padding: 1rem; 
+        text-decoration: none;
+        color: white;
+    }
+.active {
+        background: linear-gradient(#465362 0%, #465362 100%);
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+main {
+    color: black;
+    padding: 10px;
+}
+
+
+h1 { 
+    color: #E28413;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    color: #E28413;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+h3 {
+    color: #E28413;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+        
+}
+h5 {
+    font-family: 'Merriweather', serif;
+    color: white;
+}
+
+p {
+    color: #465362;
+    font-family: 'Merriweather', serif;
+}
+
+#mountainspoke {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    
+}
+
+.slideshow-container {
+    width: 70%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #465362;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: white;
+}
+
+.text {
+    color:#465362;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute; 
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbers {
+  color: #A9A9A9;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+#shopnow {
+    color:  #E28413;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+#firstsection {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+#pictures {
+     display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    
+}
+
+footer {
+    text-align: center;
+    color: #82A3A1;
+    padding: 20px;
+    font-size: 12px;
+    font-family: 'Merriweather', serif;
+    } 
+
+/* Adventure Tours */
+.leftcolumn, .leftcolumn1 {
+    min-height: 150px;
+    padding: 10px;
+}
+
+.leftcolumn img, .rightcolumn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rightcolumn {
+    padding: 10px;
+}
+
+/* Sales */
+
+.gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 10px;
+        
+    }
+    .article-img {
+        padding: 10px;
+    }
+
+.article-img img  {
+    display: block;
+    border: 1px solid #ccc;
+}
+
+figcaption {
+    padding: 20px;
+    font-family: 'Merriweather', serif;
+    color: #465362;
+}
+
+/* events */
+
+.eventinfo {
+    text-align: center;
+    padding: 5px;
+}
+
+#eventpage {
+    text-align: center;
+}
+
+fieldset {
+    margin: 2rem 0;
+    border: 1px solid #e7e7e7;
+}
+
+input {
+    padding: .1rem;
+}
+
+label {
+    display: flex;
+    padding-top: 1rem;
+    color: #82A3A1;
+  
+}
+
+label > span {
+    width: 20%;
+    
+}
+
+legend {
+    color: #465362;
+}
+
+textarea {
+    width: 600px;
+    height: 120px;
+    background-color: #e7e7e7;
+    font-size: 16px;
+    resize: none;
+}
+
+.submitBtn {
+    border: none;
+    background-color: #E28413;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 100%;
+    max-width: 20rem;
+    font-size: 10pt;
+}
+
+.divide {
+    width: 100%;
+}
+
+/* services */
+
+.installs {
+    padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid #bebebe;
+  font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+th {
+  background-color:#465362 ;
+  font-size: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+td, th {
+  border: 1px solid #bebebe;
+  padding: 10px 15px;
+}
+
+td {
+  text-align: center;
+}
+
+
+
+tr:nth-child(1) td:nth-child(1) {
+    color: white;
+    background-color: #E28413;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+tr:nth-child(1) td:nth-child(2) {
+    color: white;
+    background-color: #E28413;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+tr:nth-child(1) td:nth-child(3) {
+    color: white;
+    background-color: #E28413;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+tr:nth-child(even) td {
+  background-color: #82A3A1 ;
+    color: white;
+}
+
+tr:nth-child(odd) td {
+  background-color: white;
+    color: #465362;
+
+}
+
+h6 {
+    color: #465362;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+/* contact page */
+
+.contactpage {
+    color: #465362;
+    padding: 20px;
+}
+
+a {
+    color: #E28413;
+    text-decoration: none;
+}
+
+
+

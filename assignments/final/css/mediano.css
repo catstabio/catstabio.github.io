@@ -1,0 +1,58 @@
+@media only screen and (min-width:37.5em) {
+    header, nav {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    nav button {
+        display: none;
+    }
+    
+#primaryNav {
+    text-align: center;
+     background-color: #E28413;
+}
+
+#primaryNav li {
+    display: inline-flex;
+    font-family: 'Poppins', sans-serif;
+}
+
+#primaryNav a {
+    color: white;
+    padding: .5rem;
+    text-decoration: none;
+}
+    
+#primaryNav a:hover {
+    background-color: #465362;
+}
+    
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    
+}
+    .leftcolumn, .leftcolumn1 {
+        flex: 1;
+        margin: .5em;
+    }
+    
+    .rightcolumn {
+        flex: 1;
+        margin: .5em;
+    }
+
+    
+    #section1, #section2 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+    
+    .leftcolumn1 {
+        text-align: right;
+    }
+}
+
+
+
