@@ -7,9 +7,7 @@ body {
 header {
     display: flex;
     background-color: #82A3A1;
-    color: #e7e7e7;
-    align-items: center;
-    justify-content: space-between;
+    color: white;
     text-align: center;
     }
 
@@ -72,7 +70,6 @@ nav li{
 }
 
 main {
-    color: black;
     padding: 10px;
 }
 
@@ -92,7 +89,7 @@ h2 {
 h3 {
     color: #E28413;
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
         
 }
 h5 {
@@ -244,28 +241,47 @@ footer {
     padding: 10px;
 }
 
-/* Sales */
 
-.gallery {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin: 10px;
-        
-    }
-    .article-img {
+/* Accordion sales page */
+     .accordion {
+        margin: 50px;
+      }
+      
+      .accordion dt,
+      .accordion dd {
         padding: 10px;
-    }
+        border: 4px solid white;
+      }
+      
+      .accordion dt a,
+      .accordion dd a {
+        display: block;
+        color: white;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+      }
+      
+      .accordion dt {
+        background-color: #465362;
+      }
+      
+      .accordion dd {
+        margin: 0;
+        border-top-width: 0;
+        border-bottom-width: 0;
+        font-size: 1rem;
+      }
+      
+      .accordion dd:last-of-type {
+        border-bottom-width: 1px;
+      }
 
-.article-img img  {
-    display: block;
-    border: 1px solid #ccc;
-}
-
-figcaption {
-    padding: 20px;
-    font-family: 'Merriweather', serif;
-    color: #465362;
-}
+      .caption {
+      padding: 20px;
+      font-family: 'Merriweather', serif;
+      color: #465362;
+       font-size: 20px;
+        }
 
 /* events */
 

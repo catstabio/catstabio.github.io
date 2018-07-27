@@ -7,24 +7,21 @@
     header {
     display: flex;
     background-color: #82A3A1;
-    color: #e7e7e7;
-    align-items: center;
-    justify-content: space-between;
+    color: white;
     text-align: center;
     }
     
     .logo {
     display: inline-flex;
     align-items: center;
-    width: 25%;
-    margin-right: auto;
+    width: 20%;
     padding: 10px;
 }
     
 .heading {
     padding: 20px;
     position:absolute;
-    left: 50%;
+    left: 20%;
 }
 
     nav button {
