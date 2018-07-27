@@ -3,6 +3,29 @@
         margin: 0 auto;
         max-width: 100%;
     }
+    
+    header {
+    display: flex;
+    background-color: #82A3A1;
+    color: #e7e7e7;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    }
+    
+    .logo {
+    display: inline-flex;
+    align-items: center;
+    width: 25%;
+    margin-right: auto;
+    padding: 10px;
+}
+    
+.heading {
+    padding: 20px;
+    position:absolute;
+    left: 50%;
+}
 
     nav button {
         display: none;
